@@ -7,7 +7,7 @@ namespace OKJFeladatok
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Adja meg a feladat szamat: (pl.: 1, 2, 3): ");
+            Console.WriteLine("Adja meg a feladat szamat: (pl.: 1, 2, 3, 4): ");
             char szam = Console.ReadKey().KeyChar;
             Console.WriteLine();
             Console.ReadKey();
