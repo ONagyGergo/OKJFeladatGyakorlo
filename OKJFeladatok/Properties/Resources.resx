@@ -118,10 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ado.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="autok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\autok.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="balkezesek" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\balkezesek.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="eredmenyek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eredmenyek.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="fuvar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fuvar.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="igenyek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\igenyek.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="kemia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kemia.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="kosar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kosar.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="KutyaFajtak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KutyaFajtak.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Kutyak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kutyak.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="KutyaNevek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KutyaNevek.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="opening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opening.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="operatorok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\operatorok.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="pilotak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pilotak.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

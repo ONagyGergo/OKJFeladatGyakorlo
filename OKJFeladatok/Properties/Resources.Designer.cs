@@ -61,6 +61,48 @@ namespace OKJFeladatok.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to év;hónap;alapterület;település;komfort fokozat;adó
+        ///2;1;197;Drazsé-föld;Összkomfortos;2955
+        ///2;1;175;Cukorkatelep;Komfortos;2100
+        ///2;1;197;Medvecukor-völgy;Komfortnélküli;985
+        ///2;1;220;Cukorkatelep;Összkomfortos;3300
+        ///2;1;237;Édesdűlő;Félkomfortos;2133
+        ///2;1;142;Marcipánia;Összkomfortos;2130
+        ///2;1;124;Marcipánia;Komfortos;1488
+        ///2;1;192;Édesdűlő;Komfortos;2304
+        ///2;1;138;Drazsé-föld;Félkomfortos;1242
+        ///2;1;135;Marcipánia;Összkomfortos;2025
+        ///2;1;60;Marcipánia;Komfortnélküli;300
+        ///2;1;125;Drazsé-föld;Félkomfortos;1125        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ado {
+            get {
+                return ResourceManager.GetString("ado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indulás;Cél;Rendszám;Telefonszám;Féröhely
+        ///Eger;Salgótarján;PQA-209;30/771-8574;5
+        ///Debrecen;Csíkszereda;HLH-090;20/379-3412;2
+        ///Mezõkövesd;Sopron;GTB-868;20/261-2277;4
+        ///Komárom;Szombathely;JHT-482;30/839-8015;1
+        ///Budaörs;Miskolc;GCJ-707;20/931-7703;5
+        ///Moszkva;Salgótarján;OUD-988;30/650-9191;1
+        ///Komárom;Salgótarján;OPM-377;70/666-7237;3
+        ///Munkács;Mezõkövesd;HHH-953;30/694-1835;3
+        ///Pozsony;Kecskemét;RDE-194;70/626-4645;3
+        ///Budapest;Záhony;OWT-234;30/191-1691;3
+        ///Csíkszereda;Ungvár;JIB-510;30/936-7719;3
+        ///Békéscsaba;K [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string autok {
+            get {
+                return ResourceManager.GetString("autok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to név;elsõ;utolsó;súly;magasság
         ///Jim Abbott;1989-04-08;1999-07-21;200;75
         ///Kyle Abbott;1991-09-10;1996-08-24;200;76
@@ -82,6 +124,77 @@ namespace OKJFeladatok.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to taxi_id;indulas;idotartam;tavolsag;viteldij;borravalo;fizetes_modja
+        ///5240;2016-12-15 23:45:00;900;2,5;10,75;2,45;bankkártya
+        ///1215;2016-12-12 07:15:00;240;0,4;5,0;3,0;bankkártya
+        ///3673;2016-12-16 16:30:00;2400;10,7;31,0;0,0;készpénz
+        ///5400;2016-12-16 08:45:00;300;0,0;5,25;2,0;bankkártya
+        ///1257;2016-12-03 18:45:00;360;0,3;5,0;0,0;készpénz
+        ///4666;2016-12-30 18:00:00;2400;18,2;46,75;10,15;bankkártya
+        ///5998;2016-12-16 07:15:00;1800;18,4;45,0;11,25;bankkártya
+        ///2538;2016-12-31 17:15:00;540;0,0;6,75;0,0;készpénz
+        ///6594;2 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string fuvar {
+            get {
+                return ResourceManager.GetString("fuvar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Azonosító;Indulás;Cél;Személyek
+        ///B34019;Brassó;Gyula;3
+        ///S91006;Sopron;Balassagyarmat;3
+        ///G28666;Gyula;Gyöngyös;4
+        ///B97693;Budaörs;Nagyvárad;2
+        ///Z27646;Záhony;Moszkva;3
+        ///B87545;Budaörs;Pécs;1
+        ///G80209;Gyöngyös;Székesfehérvár;2
+        ///P91717;Párizs;Kiskörös;4
+        ///P88916;Pécs;Munkács;2
+        ///M15988;Madrid;Székesfehérvár;2
+        ///V65758;Veszprém;Berlin;4
+        ///M32636;Miskolc;Arad;3
+        ///C61870;Csíkszereda;Salgótarján;2
+        ///Z94138;Záhony;Békéscsaba;3
+        ///Z45414;Záhony;Dunaújváros;2
+        ///N69508;Nagyvárad;Róma;3
+        ///V24713;Varsó;Kecskemét;2
+        ///B46609;Balassagya [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string igenyek {
+            get {
+                return ResourceManager.GetString("igenyek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Év;Elem;Vegyjel;Rendszám;Felfedezõ
+        ///Ókor;Arany;Au;79;Ismeretlen
+        ///Ókor;Ezüst;Ag;47;Ismeretlen
+        ///Ókor;Réz;Cu;29;Ismeretlen
+        ///Ókor;Ón;Sn;50;Ismeretlen
+        ///Ókor;Ólom;Pb;82;Ismeretlen
+        ///Ókor;Higany;Hg;80;Ismeretlen
+        ///Ókor;Vas;Fe;26;Ismeretlen
+        ///Ókor;Kén;S;16;Ismeretlen
+        ///Ókor;Szén;C;6;Ismeretlen
+        ///1250;Arzén;As;33;Albertus Magnus
+        ///1450;Antimon;Sb;51;B. Valentinius (W. Tölde)
+        ///1520;Cink;Zn;30;Paracelsus
+        ///1669;Foszfor;P;15;H. Brand
+        ///1735;Kobalt;Co;27;G. Brandt
+        ///1740;Bizmut;Bi;83;I.H. Pott
+        ///1741;Platina;Pt;78;Ch. Wood
+        ///1751; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string kemia {
+            get {
+                return ResourceManager.GetString("kemia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to hazai;idegen;hazai_pont;idegen_pont;helyszín;idõpont
         ///7up Joventut;Adecco Estudiantes;81;73;Palacio Mun. De Deportes De Badalona;2005-04-03
         ///7up Joventut;Breogán Lugo;97;83;Palacio Mun. De Deportes De Badalona;2004-11-21
@@ -90,9 +203,212 @@ namespace OKJFeladatok.Properties {
         ///7up Joventut;Casademont Girona;101;79;Palacio Mun. De Deportes De Badalona;2005-01-23
         ///7up Joventut;Etosa Alicante;81;78;Pa [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string eredmenyek {
+        internal static string kosar {
             get {
-                return ResourceManager.GetString("eredmenyek", resourceCulture);
+                return ResourceManager.GetString("kosar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to id;név;eredeti név
+        ///1;Abruzzói juhászkutya;Cane da pastore Maremmano-Abruzzese
+        ///2;Afgán agár;Afghan Hound
+        ///3;Afrikai oroszlánkutya;Rhodesian Ridgeback
+        ///4;Airedale terrier;Airedale Terrier
+        ///5;Akbash;Akbash
+        ///6;Akita;Akita
+        ///7;Alaszkai malamut;Alaskan Malamute
+        ///8;Alopekisz;Alopekis
+        ///9;Alpesi tacskókopó;Alpenländische Dachsbracke
+        ///10;Amerikai akita;American Akita
+        ///11;Amerikai bulldog;American bulldog
+        ///12;Amerikai cocker spániel;American Cocker Spaniel
+        ///13;Amerikai eszkimó kutya;American Eskimo Dog
+        ///14;Amerikai k [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KutyaFajtak {
+            get {
+                return ResourceManager.GetString("KutyaFajtak", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to id;fajta_id;név_id;életkor;utolsó orvosi ellenőrzés
+        ///1;307;107;14;2017.11.27
+        ///2;329;62;9;2018.01.24
+        ///3;37;130;9;2017.04.26
+        ///4;66;27;10;2017.12.09
+        ///5;59;39;13;2017.05.02
+        ///6;132;137;14;2017.04.21
+        ///7;285;17;8;2017.08.21
+        ///8;1;189;12;2017.06.15
+        ///9;304;195;11;2017.11.22
+        ///10;378;207;3;2017.12.06
+        ///11;417;58;8;2017.03.18
+        ///12;199;51;1;2017.02.28
+        ///13;240;186;8;2017.07.23
+        ///14;369;244;13;2017.12.08
+        ///15;351;138;20;2017.05.14
+        ///16;161;80;5;2017.04.23
+        ///17;42;226;10;2017.09.14
+        ///18;186;191;16;2017.04.20
+        ///19;13;149;1;2018.02.2 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Kutyak {
+            get {
+                return ResourceManager.GetString("Kutyak", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to id;kutyanév
+        ///1;Akina
+        ///2;Akira
+        ///3;Alex
+        ///4;Ali
+        ///5;Amanda
+        ///6;April
+        ///7;Asterix
+        ///8;Audrey
+        ///9;Babuka
+        ///10;Bajusz
+        ///11;Bamboo
+        ///12;Bandita
+        ///13;Barnabás
+        ///14;Bartók
+        ///15;Bebe
+        ///16;Benji
+        ///17;Benni
+        ///18;Bento
+        ///19;Berci
+        ///20;Betyár
+        ///21;Bingó
+        ///22;Blackie
+        ///23;Blacky
+        ///24;Blecky
+        ///25;Blöki
+        ///26;Bó
+        ///27;Bobby
+        ///28;Bobi
+        ///29;Bobó
+        ///30;Boga
+        ///31;Bogi
+        ///32;Bojti
+        ///33;Bonnei
+        ///34;Bono
+        ///35;Bony
+        ///36;Boris
+        ///37;Börni
+        ///38;Bosco
+        ///39;Boti
+        ///40;Botond
+        ///41;Boxos
+        ///42;Breien
+        ///43;Bronzó
+        ///44;Brownie
+        ///45;Brutus
+        ///46;Buli
+        ///47;Carrie
+        ///48;Casper
+        ///49;Castor
+        ///50;Ca [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KutyaNevek {
+            get {
+                return ResourceManager.GetString("KutyaNevek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to eredetiCim;magyarCim;bemutato;forgalmazo;bevel;latogato
+        ///Allied;Szövetségesek;2016.12.01;UIP;44341076;30804
+        ///Vaiana;Vaiana;2016.12.01;Forum;33362335;24664
+        ///Underworld: Blood Wars;Underworld – Vérözön;2016.12.01;InterCom;17756555;11578
+        ///#SOHAVÉGETNEMÉRŐS;#SOHAVÉGETNEMÉRŐS;2016.12.01;Szinfolt Film;9563885;8248
+        ///Just Drop Dead;Halj már meg!;2016.12.01;Big Bang Media;2024300;1473
+        ///Agassi;A szobalány;2016.12.01;MoziNet;1808700;1319
+        ///I, Daniel Blake;Én, Daniel Blake;2016.12.01;Vertigo;1697399;1293
+        ///Office Christm [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string opening {
+            get {
+                return ResourceManager.GetString("opening", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 500 mod 265
+        ///780 / 114
+        ///814 div 200
+        ///470 - 531
+        ///802 * 553
+        ///766 @ 767
+        ///914 / 21
+        ///973 mod 642
+        ///314 - 372
+        ///244 div 227
+        ///796 mod 702
+        ///790 * 768
+        ///821 + 244
+        ///444 / 638
+        ///66 mod 399
+        ///566 mod 59
+        ///506 mod 933
+        ///831 - 438
+        ///474 / 16
+        ///623 * 280
+        ///742 / 25
+        ///973 mod 646
+        ///829 + 31
+        ///785 div 623
+        ///523 * 88
+        ///383 div 888
+        ///243 mod 544
+        ///312 mod 223
+        ///293 div 503
+        ///264 - 830
+        ///751 - 672
+        ///963 mod 0
+        ///613 + 135
+        ///752 mod 687
+        ///28 mod 756
+        ///309 - 706
+        ///350 + 620
+        ///128 * 718
+        ///736 * 831
+        ///801 mod 708
+        ///143 / 697
+        ///200 + 745
+        ///951 / 767
+        ///88 mod 813
+        ///7 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string operatorok {
+            get {
+                return ResourceManager.GetString("operatorok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to név;születési_dátum;nemzetiség;rajtszám
+        ///Lewis Hamilton;1985.01.07;brit;44
+        ///Nick Heidfeld;1977.05.10;német;
+        ///Nico Rosberg;1985.06.27;német;6
+        ///Fernando Alonso;1981.07.29;spanyol;14
+        ///Heikki Kovalainen;1981.10.19;finn;
+        ///Kazuki Nakajima;1985.01.11;japán;
+        ///Sébastien Bourdais;1979.02.28;francia;
+        ///Kimi Räikkönen;1979.10.17;finn;7
+        ///Robert Kubica;1984.12.07;lengyel;88
+        ///Timo Glock;1982.03.18;német;
+        ///Takuma Sato;1977.01.28;japán;
+        ///Nelson Piquet Jr;1985.07.25;brazíl;
+        ///Felipe Massa;1981.04.25;brazíl;19
+        ///David Coulthard; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string pilotak {
+            get {
+                return ResourceManager.GetString("pilotak", resourceCulture);
             }
         }
     }

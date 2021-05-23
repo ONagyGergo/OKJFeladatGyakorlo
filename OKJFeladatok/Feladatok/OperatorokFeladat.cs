@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace OKJFeladatok.Feladatok
 {
@@ -12,37 +11,36 @@ namespace OKJFeladatok.Feladatok
         static readonly List<Kifejezes> kifejezesek = new();
         public static bool OperatorKiir()
         {
-            ReadTxt();
+            ReadData();
             Feladat2();
             Feladat3();
             Feladat4();
             Feladat5();
             Feladat7();
-            Feladat8();
+            Feladat8(); 
             Console.WriteLine();
-            Console.ReadKey();
+            Console.ReadLine();
             return true;
         }
-        private static void ReadTxt()
+        private static void ReadData()
         {
-            using StreamReader reader = new("kifejezesek.txt");
-            while (!reader.EndOfStream)
+            foreach (var item in File.ReadAllLines("operatorok.txt", Encoding.UTF8))
             {
-                kifejezesek.Add(new Kifejezes(reader.ReadLine()));
+                Kifejezes kifejezes = new(item);
+                kifejezesek.Add(kifejezes);
             }
-            reader.Close();
         }
         private static void Feladat2()
         {
-            Console.WriteLine($"2. feladat: {kifejezesek.Count}");
+            Console.WriteLine($"2. feladat: Kifejezese szama: {kifejezesek.Count}");
         }
         private static void Feladat3()
         {
-            Console.WriteLine($"3. feladat: {kifejezesek.Count(o => o.Operator == "mod")}");
+            Console.WriteLine($"3. feladat: Kifejezesek maradekos osztassal: {kifejezesek.Count(a => a.Operator == "mod")}");
         }
         private static void Feladat4()
         {
-            Console.WriteLine($"4. feladat: {(kifejezesek.FirstOrDefault(a => a.ElsoOperandus % 10 == 0 && a.MasodikOperandus % 10 == 0) != null ? "Van ilyen kifejezes" : "Nincs ilyen kifejezes")}");
+            Console.WriteLine($"3. feladat: {(kifejezesek.FirstOrDefault(a => a.ElsoOperandus % 10 == 0 && a.MasodikOperandus % 10 == 0) != null ? "Van ilyen kifejezes" : "Nincs ilyen kifejezes")}");
         }
         private static void Feladat5()
         {
@@ -55,7 +53,7 @@ namespace OKJFeladatok.Feladatok
             Console.WriteLine($"\t+   -> {kifejezesek.Count(o => o.Operator == "+")}");
         }
         private static string Feladat6(string beolvasott)
-        {            
+        {
             if (beolvasott.Equals("vege"))
             {
                 return "vege";
@@ -68,7 +66,7 @@ namespace OKJFeladatok.Feladatok
                 switch (darab[1])
                 {
                     default:
-                        return ($"{adat} = Hibas operator");
+                        return ($"{darab} = Hibas operator");
                     case "mod":
                         visszater = adat + " = " + (int.Parse(darab[0]) % int.Parse(darab[2]));
                         break;
@@ -91,7 +89,7 @@ namespace OKJFeladatok.Feladatok
             }
             catch (Exception)
             {
-                return ($"{adat} = Egyeb hiba");
+                return ($"{adat} = egyeb hiba");
             }
             return visszater;
         }
@@ -100,7 +98,7 @@ namespace OKJFeladatok.Feladatok
             string beolvasott = "";
             while (!beolvasott.Equals("vege"))
             {
-                Console.WriteLine("7. feladat: Kerek egy kifejezest (pl.: 1 + 1): ");
+                Console.WriteLine("7. feladat: Kerek egy kifejezest: ");
                 beolvasott = Console.ReadLine();
                 if (Feladat6(beolvasott).Equals("vege"))
                 {
@@ -119,10 +117,10 @@ namespace OKJFeladatok.Feladatok
             foreach (Kifejezes item in kifejezesek)
             {
                 beir = item.ElsoOperandus + " " + item.Operator + " " + item.MasodikOperandus;
-                writer.Write($"{Feladat6(beir)} \n");
+                writer.Write($"{Feladat6(beir)} \t");
             }
             writer.Close();
-            Console.WriteLine("8. feladat: eredmenyek.txt kesz");
+            Console.WriteLine("8. feladat: eredmenyek.txt");
         }
     }
     class Kifejezes

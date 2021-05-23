@@ -1,9 +1,8 @@
-﻿using OKJFeladatok.Properties;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace OKJFeladatok.Feladatok
 {
@@ -22,14 +21,21 @@ namespace OKJFeladatok.Feladatok
             Console.ReadLine();
             return true;
         }
-        private static void ReadCSV() => Resources.eredmenyek.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Skip(1).ToList().ForEach(a => eredmenyek.Add(new Eredmeny(a)));
+        private static void ReadCSV()
+        {
+            foreach (var item in File.ReadAllLines("kosar.csv", Encoding.UTF8).Skip(1))
+            {
+                Eredmeny eredmeny = new(item);
+                eredmenyek.Add(eredmeny);
+            }
+        }
         private static void Feladat3()
         {
-            Console.WriteLine($"3. feladat: Real Madrid: {eredmenyek.Count(a => a.Hazai.Equals("Real Madric"))} Idegen: {eredmenyek.Count(a => a.Idegen.Equals("Real Madrid"))}");
+            Console.WriteLine($"3. feladat: Real Madrid: Hazai: {eredmenyek.Count(a => a.Hazai.Contains("Real Madrid"))}, Idegen: {eredmenyek.Count(a => a.Idegen.Contains("Real Madrid"))} ");
         }
         private static void Feladat4()
         {
-            Console.WriteLine($"4. feladat: Volt dontetlen? {(eredmenyek.All(a => a.HazaiPont == a.IdegenPont)? "Igen" : "Nem volt")}");
+            Console.WriteLine($"4. feladat: Volt dontetlen? {(eredmenyek.All(a => a.HazaiPont == a.IdegenPont) ? "igen" : "Nem")}");
         }
         private static void Feladat5()
         {
@@ -38,12 +44,12 @@ namespace OKJFeladatok.Feladatok
         private static void Feladat6()
         {
             Console.WriteLine("6. feladat: ");
-            eredmenyek.Where(a => a.Idopont == "2004-11-21").ToList().ForEach(a => Console.WriteLine($"\t{a.Hazai} - {a.Idegen} ({a.HazaiPont}: {a.IdegenPont})"));
+            eredmenyek.Where(a => a.Idopont == DateTime.Parse("2004.11.21")).ToList().ForEach(x => Console.WriteLine($"\t{x.Hazai} - {x.Idegen} ({x.HazaiPont}:{x.IdegenPont})"));
         }
         private static void Feladat7()
         {
             Console.WriteLine("7. feladat: ");
-            eredmenyek.GroupBy(a => a.Helyszin).Where(y => y.Count() >= 20).ToList().ForEach(b => Console.WriteLine($"\t{b.Key}: {b.Count()}"));
+            eredmenyek.GroupBy(a => a.Helyszin).Where(y => y.Count() > 20).ToList().ForEach(x => Console.WriteLine($"\t{x.Key}: {x.Count()}"));
         }
     }
     class Eredmeny
@@ -53,7 +59,7 @@ namespace OKJFeladatok.Feladatok
         public int HazaiPont { get; set; }
         public int IdegenPont { get; set; }
         public string Helyszin { get; set; }
-        public string Idopont { get; set; }
+        public DateTime Idopont { get; set; }
         public Eredmeny(string sor)
         {
             string[] sa = sor.Split(';');
@@ -62,7 +68,7 @@ namespace OKJFeladatok.Feladatok
             HazaiPont = int.Parse(sa[2]);
             IdegenPont = int.Parse(sa[3]);
             Helyszin = sa[4];
-            Idopont = sa[5];
+            Idopont = DateTime.Parse(sa[5]);
         }
     }
 }

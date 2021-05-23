@@ -1,9 +1,7 @@
-﻿using OKJFeladatok.Properties;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OKJFeladatok.Properties;
+using System.Collections.Generic;
 
 namespace OKJFeladatok.Feladatok
 {
@@ -28,17 +26,18 @@ namespace OKJFeladatok.Feladatok
         private static void Feladat4()
         {
             Console.WriteLine("4. feladat: ");
-            jatekosok.FindAll(a => a.UtolsoDatum < Convert.ToDateTime("1999.11") && a.UtolsoDatum > Convert.ToDateTime("1999.10")).ToList().ForEach(x => Console.WriteLine($"\t{x.Nev}, {Math.Round(x.Magassag * 2.54, 2)} cm"));
+            jatekosok.FindAll(a => a.UtolsoDatum < DateTime.Parse("1999.11") && a.UtolsoDatum > DateTime.Parse("1999.10")).ToList().ForEach(x => Console.WriteLine($"\t{x.Nev}, {Math.Round(x.Magassag * 2.54, 1)}"));
         }
         private static void Feladat5_6()
         {
             bool bennevan = false;
-            int bevittszam = 0;
-            Console.WriteLine("Kerek egy szamot 1990 es 1999 kozott: ");
+            int bevitt = 0;
+            Console.WriteLine("5. feladat: ");
+            Console.WriteLine("Kerek egy 1990 es 1999 kozotti evszamot: ");
             while (bennevan == false)
             {
-                bevittszam = Convert.ToInt32(Console.ReadLine());
-                if (bevittszam >= 1990 && bevittszam <= 1999)
+                bevitt = int.Parse(Console.ReadLine());
+                if (bevitt >= 1990 && bevitt <= 1999)
                 {
                     bennevan = true;
                 }
@@ -47,18 +46,18 @@ namespace OKJFeladatok.Feladatok
                     Console.WriteLine("Hibas adat");
                 }
             }
-            double osszsuly = 0;
+            double osszSuly = 0;
             double darab = 0;
             for (int i = 0; i < jatekosok.Count; i++)
             {
-                if (bevittszam >= jatekosok[i].ElsoDatum.Year && bevittszam <= jatekosok[i].UtolsoDatum.Year)
+                if (bevitt >= jatekosok[i].ElsoDatum.Year && bevitt <= jatekosok[i].UtolsoDatum.Year)
                 {
-                    osszsuly += jatekosok[i].Suly;
+                    osszSuly += jatekosok[i].Suly;
                     darab++;
                 }
             }
-            double atlag = osszsuly / darab;
-            Console.WriteLine($"6. feladat: {Math.Round(atlag, 2)}");
+            double atlag = osszSuly / darab;
+            Console.WriteLine($"6. feladat: {Math.Round(atlag, 2)} font");
         }
     }
     class Jatekos

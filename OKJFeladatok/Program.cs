@@ -8,31 +8,46 @@ namespace OKJFeladatok
         static void Main(string[] args)
         {
             Console.WriteLine("Adja meg a feladat szamat: (pl.: 1, 2, 3, 4): ");
-            char szam = Console.ReadKey().KeyChar;
+            string bevitt = Console.ReadLine();            
             Console.WriteLine();
-            Console.ReadKey();
-            switch (szam)
+            switch (bevitt)
             {
                 default:
                     Console.WriteLine("Ilyen feladat nincs");
                     break;
-                case '1':
+                case "1":
                     Console.Clear();
-                    PilotakFeladat.PilotakKiir();
+                    AdoFeladat.AdoKiiras();
                     if (true)
                     {
                         Console.WriteLine("Feladat vege. Press enter to continue.");
                     }
                     break;
-                case '2':
+                case "2":
                     Console.Clear();
-                    OperatorokFeladat.OperatorKiir();
+                    BalkezesekFeladat.BalkezesekKiir();
                     if (true)
                     {
                         Console.WriteLine("Feladat vege. Press enter to continue.");
                     }
                     break;
-                case '3':
+                case "3":
+                    Console.Clear();
+                    FuvarFeladat.FuvarKiiras();
+                    if (true)
+                    {
+                        Console.WriteLine("Feladat vege. Press enter to continue.");
+                    }
+                    break;
+                case "4":
+                    Console.Clear();
+                    KemiaFeladat.KemiaKiir();
+                    if (true)
+                    {
+                        Console.WriteLine("Feladat vege. Press enter to continue.");
+                    }
+                    break;
+                case "5":
                     Console.Clear();
                     Kosar2004Feladat.KosarKiiras();
                     if (true)
@@ -40,9 +55,41 @@ namespace OKJFeladatok
                         Console.WriteLine("Feladat vege. Press enter to continue.");
                     }
                     break;
-                case '4':
+                case "6":
                     Console.Clear();
-                    BalkezesekFeladat.BalkezesekKiir();
+                    KutyakFeladat.KutyakKiiras();
+                    if (true)
+                    {
+                        Console.WriteLine("Feladat vege. Press enter to continue.");
+                    }
+                    break;
+                case "7":
+                    Console.Clear();
+                    OpeningFeladat.OpeningKiir();
+                    if (true)
+                    {
+                        Console.WriteLine("Feladat vege. Press enter to continue.");
+                    }
+                    break;
+                case "8":
+                    Console.Clear();
+                    OperatorokFeladat.OperatorKiir();
+                    if (true)
+                    {
+                        Console.WriteLine("Feladat vege. Press enter to continue.");
+                    }
+                    break;
+                case "9":
+                    Console.Clear();
+                    PilotakFeladat.PilotakKiir();
+                    if (true)
+                    {
+                        Console.WriteLine("Feladat vege. Press enter to continue.");
+                    }
+                    break;
+                case "10":
+                    Console.Clear();
+                    TelekocsiFeladat.TelekocsiKiiras();
                     if (true)
                     {
                         Console.WriteLine("Feladat vege. Press enter to continue.");
