@@ -1,2 +1,2 @@
 # OKJFeladatGyakorlo
-OKJFeladatok2021
+Gyakorló program a 2021-es komplex Szoftverfejlesztő OKJ vizsgához.
